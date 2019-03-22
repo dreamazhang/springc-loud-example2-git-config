@@ -1,0 +1,16 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dreamazhang/springc-loud-example2-git-config     # ����git�ֿ�ĵ�ַ
+          search-paths: config-repo                             # git�ֿ��ַ�µ���Ե�ַ���������ö������,�ָ
+          username:  dreamazhanag                                           # git�ֿ���˺�
+          password:  wlgcxy6235875                               # git�ֿ������
+
+  #spring.profiles.active: native  ����ſ����src/main/resourceĿ¼�¼���
+  #spring.cloud.config.server.native.searchLocations=file:E:/properties/

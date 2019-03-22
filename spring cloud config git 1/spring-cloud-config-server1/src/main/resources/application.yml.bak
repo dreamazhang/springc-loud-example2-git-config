@@ -1,0 +1,16 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dreamazhang/springc-loud-example2-git-config     # 配置git仓库的地址
+          search-paths: config-repo                             # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username:  dreamazhanag                                           # git仓库的账号
+          password:  wlgcxy6235875                               # git仓库的密码
+
+  #spring.profiles.active: native  如果放开会从src/main/resource目录下检索
+  #spring.cloud.config.server.native.searchLocations=file:E:/properties/
